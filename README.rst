@@ -24,9 +24,9 @@ API
 Run locally
 ===========
 
-By default, readinglist persists its records inside a `Redis
-<http://redis.io/>`_  database, so it has to be installed first (see the
-"Install Redis" section below for more on this).
+By default, readinglist persists its records inside a `PostgreSQL
+<http://www.postgresql.org//>`_  database, so it has to be installed first (see the
+"Install PostgreSQL" section below for more on this).
 
 Once Redis is installed:
 
@@ -43,20 +43,20 @@ following config::
 
 
 
-Install Redis
-=============
+Install PostgreSQL
+==================
 
 Linux
 -----
 
 On debian / ubuntu based systems::
 
-    apt-get install redis-server
+    apt-get install postgresql
 
 
 or::
 
-    yum install redis
+    yum install postgresql
 
 OS X
 ----
@@ -65,11 +65,7 @@ Assuming `brew <http://brew.sh/>`_ is installed, Redis installation becomes:
 
 ::
 
-    brew install redis
-
-To restart it (Bug after configuration update)::
-
-    brew services restart redis
+    brew install postgresql
 
 
 Install libffi
